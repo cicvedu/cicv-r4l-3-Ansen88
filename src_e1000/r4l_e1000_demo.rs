@@ -468,6 +468,7 @@ impl pci::Driver for E1000Drv {
 
     fn remove(data: &Self::Data) {
         pr_info!("Rust for linux e1000 driver demo (remove)\n");
+        let netdev_reg = &data._netdev_reg;
     }
 }
 struct E1000KernelMod {
